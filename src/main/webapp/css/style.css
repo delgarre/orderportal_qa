@@ -1,0 +1,35 @@
+.custom-bg{
+    background:#000051!important;
+}
+
+.admin .card{
+    
+    border: 1px gold;
+}
+
+.admin .card:hover{
+    
+    background: #e2e2e2;
+    cursor: pointer;
+}
+.list-group-item.active{
+    background:#000051!important;
+    border-color:#000051!important;
+}
+.discount-label{
+    
+    background-color: white;
+    text-decoration: line-through;
+}
+.product-card:hover{
+    background: #e2e2e2;
+    cursor: pointer;
+}
+.users .row{
+    margin-right: 2em;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}

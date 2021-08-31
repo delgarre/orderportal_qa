@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name ="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name ="connection.url">jdbc:mysql://172.20.29.71:3306/mycart</property>
+        <property name ="connection.username">admin</property>
+        <property name ="connection.password">ordering</property>
+        <property name ="dialect">org.hibernate.dialect.MySQL57Dialect</property>
+        <property name ="hbm2ddl.auto">none</property>
+        <property name ="show_sql">true</property>
+        <mapping class = "com.learn.mycart.entities.User"/>
+        <mapping class = "com.learn.mycart.entities.Category"/>
+        <mapping class = "com.learn.mycart.entities.Company"/>
+        <mapping class = "com.learn.mycart.entities.Vendor"/>
+        <mapping class = "com.learn.mycart.entities.OrderHistory"/>
+        <mapping class = "com.learn.mycart.entities.CompanyUser"/>
+        <mapping class = "com.learn.mycart.entities.UserLocation"/>
+        <mapping class = "com.learn.mycart.entities.Notice"/>
+        <mapping class = "com.learn.mycart.entities.Orders"/>
+        <mapping class = "com.learn.mycart.entities.Item"/>
+        <mapping class = "com.learn.mycart.entities.LocationType"/>
+        <mapping class = "com.learn.mycart.entities.Approve"/>
+        <mapping class = "com.learn.mycart.entities.Types"/>
+        <mapping class = "com.learn.mycart.entities.Manufacturers"/>
+        <mapping class = "com.learn.mycart.entities.CPT"/>
+        <mapping class = "com.learn.mycart.entities.Modal"/>
+        <mapping class = "com.learn.mycart.entities.UOM"/>
+        <mapping class = "com.learn.mycart.entities.L_Company"/>
+        <mapping class = "com.learn.mycart.entities.SubmitDate"/>
+        <mapping class = "com.learn.mycart.entities.EmailLog"/>
+        <mapping class = "com.learn.mycart.entities.SqlLog"/>
+    </session-factory>
+</hibernate-configuration>
